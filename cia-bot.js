@@ -2,7 +2,7 @@
                     Experimental Version
 **/
 function MessageHandler(context, event) {
-    if(event.message == "<Graduation_Date> promysticgamer") {
+    if(event.message == "[Graduation_Date] promysticgamer") {
        context.sendResponse('>*Trainee Name:* promysticgamer' + '\n\n>*Date Added:* Thu Dec 08, 2016' + '\n\n>*Predicted Graduation:* Thu Dec 29, 2016' + '\n\n>*Extended Date:* Thu Jan 19, 2017' + '\n\n_*The date shown is not final and may change at anytime depending on the situation.*_'); 
     }
     else if(event.message == "[Graduation_Date] kmsfruit") {
