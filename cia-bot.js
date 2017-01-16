@@ -32,43 +32,16 @@ function MessageHandler(context, event) {
      
     }
     if(event.message == 'Hey') {
-   context.sendResponse('Hi, I see you are wanting to check the graduation date for a trainee! Well, you came to the right place! Message me `(Graduation_Date) "TraineeName"`');
+   context.sendResponse('Hello ' + event.senderobj.display+' I see you are wanting to check the graduation date for a trainee! Well, you came to the right place! Message me `(Graduation_Date) "TraineeName"`');
    }
-   
-     if(event.message == 'Hello'){
-     context.sendResponse('Hi, I see you are wanting to check the graduation date for a trainee! Well, you came to the right place! Message me `(Graduation_Date) "TraineeName"`');
+    if(event.message == 'Hello'){
+     context.sendResponse('Hi ' +event.senderobj.display+ ' I see you are wanting to check the graduation date for a trainee! Well, you came to the right place! Message me `(Graduation_Date) "TraineeName"`');
    }
-if(event.message.toLowerCase()=='hi'){
- if(isNewUser(context)){  
-     var totalcount = context.simpledb.botleveldata;
-     if(!totalcount){
-         context.simpledb.botleveldata.usagecount=0;
-         totalcount = parseInt(context.simpledb.botleveldata.usagecount)+1;
-         }else{
-         totalcount = parseInt(context.simpledb.botleveldata.usagecount)+1;
-         }
-         
-         context.sendResponse("Hello and Welcome, you are user number::" + totalcount);
-}else{
-    context.sendResponse("Welcome back " + count);
+    
+   if(event.message == 'Hi'){
+       context.sendResponse('Hello '+ event.senderobj.display);
+   }
 }
-
-}
-}
-
-function isNewUser(context){
-    var newuser = context.simpledb.roomleveldata.isnewuser;
-    if(!newuser){
-       context.simpledb.roomleveldata.isnewuser=true;
-       return true;
-    }else{
-      return false;  
-    }
-
-}
-
-
-
 
 function EventHandler(context, event) {
     
