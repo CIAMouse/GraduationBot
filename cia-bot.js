@@ -1,3 +1,5 @@
+//   Copyright David Herrera, 2017.
+//   All Rights Reserved.
 function MessageHandler(context, event) {
    
    if(event.message == "(Graduation_Date) promysticgamer"){
@@ -11,12 +13,24 @@ function MessageHandler(context, event) {
     }
     
     else if(event.message == "(Graduation_Date) thematrix25aldo") {
-        context.sendResponse(">*Trainee Name:* thematrix25aldo" + "\n\n>*Date Added:* Thur Jan 19, 2017" + "\n\n>*Predicted Graduation:* Feb 6, 2017" + '\n\n>*Extened Date:* _Pending_' + "\n\n_*The date shown is not final and may change at anytime depending on the Leads.*_"); 
+        context.sendResponse(">*Trainee Name:* thematrix25aldo" + "\n\n>*Date Added:* Thur Jan 19, 2017" + "\n\n>*Predicted Graduation:* Mon Feb 6, 2017" + '\n\n>*Extened Date:* _Pending_' + "\n\n_*The date shown is not final and may change at anytime depending on the Leads.*_"); 
     }
  else if(event.message == "(Graduation_Date) featherfalling__"){
-      context.sendResponse(">*Trainee Name:* featherfalling__" + "\n\n>*Date Added:* Sun Jan 22, 2017" + "\n\n>*Predicted Graduation:* Feb 6, 2017" + "\n\n>*Extened Date:* _Pending_" + "\n\n_*The date shown is not final and may change at anytime depending on the Leads.*_");
+      context.sendResponse(">*Trainee Name:* featherfalling__" + "\n\n>*Date Added:* Sun Jan 22, 2017" + "\n\n>*Predicted Graduation:* Mon Feb 6, 2017" + "\n\n>*Extened Date:* _Pending_" + "\n\n_*The date shown is not final and may change at anytime depending on the Leads.*_");
  }
-    if(event.message == 'Hey') {
+  else if(event.message == "(Graduation_Date) blazenplayzmcpe"){
+     context.sendResponse(">*Trainee Name:* blazenplayzmcpe" + "\n\n>*Date Added:* Sat Jan 28, 2017" + "\n\n>*Predicted Graduation:* Sat Feb 11, 2017" + "\n\n>*Extened Date:* _Pending_" + "\n\n_*The date shown is not final and may change at anytime depending on the Leads.*_");
+ }
+    else if(event.message == "(Graduation_Date) sharky"){
+        context.sendResponse(">*Trainee Name:* sharky" + "\n\n>*Date Added:* Sun Jan 22, 2017" + "\n\n>*Predicted Graduation:* Mon Feb 6, 2017" + "\n\n>*Extened Date:* _Pending_" + "\n\n_*The date shown is not final and may change at anytime depending on the Leads.*_");
+    }
+     if(event.message == '(Current-Trainees)'){
+          context.sendResponse('*Listing Current Trainees.....*' + '\n\n>_promysticgamer_' + '\n\n>_xxheyitznaomixx_' + '\n\n>_tbnrmeg_' + '\n\n>_thematrix25aldo_' + '\n\n>_featherfalling_' + '\n\n>_sharky_');
+     }
+      if(event.message == '(Changelog)'){
+           context.sendResponse('_*Listing V2 Changelog.....*_' + '\n\n>*New Commands:* `(Current-Trainees)` and `(Changelog)`' + '\n\n>*Updates:* Updated Graduation dates and added new Trainees');
+      }
+         if(event.message == 'Hey') {
    context.sendResponse('Hello ' + event.senderobj.display+' ,I see you are wanting to check the graduation date for a trainee! Well, you came to the right place! Message me `(Graduation_Date) "TraineeName"` to get a trainees certain date or to get this weeks possible grads, message me `(Current-Week-Grads)`');
    }
     if(event.message == 'Hello'){
@@ -27,18 +41,8 @@ function MessageHandler(context, event) {
        context.sendResponse('Hello '+ event.senderobj.display);
    }
    if(event.message == '(Current-Week-Grads)'){
-     context.sendResponse('_*Listing This Weeks Possible Grads...*_' + '\n\n>_Tbnrmeg_' + "\n\n>_xxheyitznaomixx_");
+     context.sendResponse('_*Listing This Weeks Possible Grads...*_' + '\n\n>_Updating to upcoming week, checkin on Monday!_');
    }
-    else if(event.message == "(Graduation_Date) sharky"){
-        context.sendResponse(">*Trainee Name:* sharky" + "\n\n>*Date Added:* Sun Jan 22, 2017" + "\n\n>*Predicted Graduation:* Feb 6, 2017" + "\n\n>*Extened Date:* _Pending_" + "\n\n_*The date shown is not final and may change at anytime depending on the Leads.*_");
-
-    }
-     if(event.message == '(Current-Trainees)'){
-          context.sendResponse('*Listing Current Trainees.....*' + '\n\n>_promysticgamer_' + '\n\n>_xxheyitznaomixx_' + '\n\n>_tbnrmeg_' + '\n\n>_thematrix25aldo_' + '\n\n>_featherfalling_' + '\n\n>_sharky_');
-     }
-      if(event.message == '(Changelog)'){
-           context.sendResponse('_*Listing V2 Changelog.....*_' + '\n\n>*New Commands:* `(Current-Trainees)` and `(Changelog)`' + '\n\n>*Updates:* Updated Graduation dates and added new Trainees')
-      }
 }
 
 function EventHandler(context, event) {
