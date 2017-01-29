@@ -28,7 +28,7 @@ function MessageHandler(context, event) {
         context.sendResponse(">*Trainee Name:* sharky" + "\n\n>*Date Added:* Sun Jan 22, 2017" + "\n\n>*Predicted Graduation:* Mon Feb 6, 2017" + "\n\n>*Extened Date:* _Pending_" + "\n\n_*The date shown is not final and may change at anytime depending on the Leads.*_");
     }
      if(event.message == '(Current-Trainees)'){
-          context.sendResponse('*Listing Current Trainees.....*' + '\n\n>_promysticgamer_' + '\n\n>_xxheyitznaomixx_' + '\n\n>_tbnrmeg_' + '\n\n>_thematrix25aldo_' + '\n\n>_featherfalling_' + '\n\n>_sharky_');
+          context.sendResponse('*Listing Current Trainees.....*' + '\n\n>_promysticgamer_' + '\n\n>_xxheyitznaomixx_' + '\n\n>_tbnrmeg_' + '\n\n>_thematrix25aldo_' + '\n\n>_featherfalling_' + '\n\n>_sharky_' +  '\n\n>_blazenplayzmcpe_');
      }
       if(event.message == '(Changelog)'){
            context.sendResponse('_*Listing V2 Changelog.....*_' + '\n\n>*New Commands:* `(Current-Trainees)` and `(Changelog)`' + '\n\n>*Updates:* Updated Graduation dates and added new Trainees');
