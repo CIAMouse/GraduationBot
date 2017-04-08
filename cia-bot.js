@@ -15,12 +15,12 @@ function MessageHandler(context, event) {
     // Command (Changelog)
     if (event.senderobj.display === 'David Diaz' === true) {
         if (event.message === '(Changelog)')
-        context.sendResponse('_*Listing V3 Changelog.....*_' + '\n\n>*-Added premissions, overall making it more sucure!*');
+        context.sendResponse('_*Listing V3 Changelog.....*_' + '\n\n>*-Added permissions, overall making it more secure!*');
     }
 
     if (event.senderobj.display === 'Brandon Valencia' === true) {
         if (event.message === '(Changelog)')
-        context.sendResponse('_*Listing V3 Changelog.....*_' + '\n\n>*-Added premissions, overall making it more sucure!*');
+        context.sendResponse('_*Listing V3 Changelog.....*_' + '\n\n>*-Added permissions, overall making it more secure!*');
     }
 
     // Command (Graduation_Date)
